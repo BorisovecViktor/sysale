@@ -1,0 +1,89 @@
+@import "utils/vars";
+
+.select {
+  &__box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__list {
+    position: absolute;
+    top: 30px;
+    background-color: $white-color;
+    max-height: 0;
+    width: 100%;
+    padding-top: 10px;
+    opacity: 0;
+    transition: all $transition-duration;
+    border-radius: 0 0 0 15px;
+    overflow: hidden;
+    order: 1;
+    z-index: 2;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      background: $scroll-bar-color;
+      border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $scroll-bar-color;
+      border-radius: 15px;
+    }
+
+    &--active {
+      max-height: 120px;
+      opacity: 1;
+      overflow-y: auto;
+
+      & + .selected-color::after {
+        transform: rotateX(180deg);
+        top: 25%;
+      }
+    }
+  }
+
+  &__item {
+    border-radius: 0 10px 10px 0;
+
+    &:hover {
+      background: #f3f8fc;
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    padding: 4px 24px;
+    cursor: pointer;
+  }
+}
+
+.selected-color {
+  background: $white-color;
+  border-radius: 15px;
+  position: relative;
+  padding: 12px 24px;
+  cursor: pointer;
+  order: 0;
+  z-index: 3;
+}
+
+.selected-color::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("../images/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all $transition-duration;
+}

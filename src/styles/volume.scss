@@ -1,0 +1,49 @@
+@import "utils/vars";
+
+.volume {
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+
+    &--active > span::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: #dedede;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 18px;
+      height: 13px;
+      background: linear-gradient(259.56deg, $linear-gradient-start -3.95%, $linear-gradient-end 109.44%);
+      border-radius: 5px;
+      transition: $transition-duration ease-in-out;
+    }
+  }
+
+  &__label {
+    padding-left: 39px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    z-index: 1;
+    cursor: pointer;
+  }
+}

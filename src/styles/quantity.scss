@@ -1,0 +1,40 @@
+@import "utils/vars";
+
+.quantity {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 39px;
+  background: #e2e9f0;
+  border-radius: 30px;
+  transition: $transition-duration ease-in-out;
+
+  &:hover {
+    background: #d8e3ee;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    height: 100%;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__button--remove {
+    left: 0;
+    background-image: url(../images/button-remove.svg);
+  }
+
+  &__button--add {
+    right: 0;
+    background-image: url(../images/button-add.svg);
+  }
+}

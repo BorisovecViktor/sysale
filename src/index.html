@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sysale</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="product">
+      <div class="product__status">
+        <span>new</span>
+      </div>
+      <div class="product__compare"></div>
+      <img src="./images/card-img_1.jpg" class="product__img" alt="shampoo"
+        onmouseout="this.src='./images/card-img_1.jpg'" onmouseover="this.src='./images/card-img_1-2.jpg'">
+      <h2 class="product__header">Шампунь</h2>
+      <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+      <div class="product__details">
+        <div class="flex-wrap flex-wrap-md">
+          <div class="product__color select__box">
+            <div class="select__list" onmouseout="this.className='select__list'" onmouseover="this.className='select__list select__list--active'">
+              <div class="select__item">
+                <label for="laroche-yellow" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-yellow" name="laroche-yellow" />
+                  Желтый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="laroche-red" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-red" name="laroche-red" />
+                  Красный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="laroche-green" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-green" name="laroche-green" />
+                  Зеленый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="laroche-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-blue" name="laroche-blue" />
+                  Белый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="laroche-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-blue" name="laroche-blue" />
+                  Черный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="laroche-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="laroche-blue" name="laroche-blue" />
+                  Синий
+                </label>
+              </div>
+            </div>
+            <div class="selected-color">
+              Цвет
+            </div>
+          </div>
+
+          <div class="product__volume volume__box">
+            <div class="volume__item volume__item--active">
+              <input type="radio" class="volume__input" id="laroche-100ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="laroche-100ml" class="volume__label">100 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="laroche-200ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="laroche-200ml" class="volume__label">200 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="laroche-300ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="laroche-300ml" class="volume__label">300 мл</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex-wrap">
+          <div class="product__cost">
+            <span class="product__price">200 грн</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__order">
+        <div class="product__quantity quantity">
+          <button type="button" class="quantity__button quantity__button--remove"></button>
+          <span class="quantity__num">1</span>
+          <button type="button" class="quantity__button quantity__button--add"></button>
+        </div>
+        <div class="product__buy">
+          <button type="button" class="product__buy-button">
+            <span class="product__buy-text">купить</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product__status">
+        <span>new</span>
+      </div>
+      <div class="product__compare"></div>
+      <img src="./images/card-img_2.jpg" class="product__img" alt="shampoo"
+        onmouseout="this.src='./images/card-img_2.jpg'" onmouseover="this.src='./images/card-img_2-2.jpg'">
+      <h2 class="product__header">Шампунь</h2>
+      <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+      <div class="product__details">
+        <div class="flex-wrap flex-wrap-md">
+          <div class="product__color select__box">
+            <div class="select__list" onmouseout="this.className='select__list'" onmouseover="this.className='select__list select__list--active'">
+              <div class="select__item">
+                <label for="pantene-yellow" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-yellow" name="pantene-yellow" />
+                  Желтый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="pantene-red" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-red" name="pantene-red" />
+                  Красный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="pantene-green" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-green" name="pantene-green" />
+                  Зеленый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="pantene-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-blue" name="pantene-blue" />
+                  Белый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="pantene-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-blue" name="pantene-blue" />
+                  Черный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="pantene-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="pantene-blue" name="pantene-blue" />
+                  Синий
+                </label>
+              </div>
+            </div>
+            <div class="selected-color">
+              Цвет
+            </div>
+          </div>
+
+          <div class="product__volume volume__box">
+            <div class="volume__item volume__item--active">
+              <input type="radio" class="volume__input" id="pantene-100ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="pantene-100ml" class="volume__label">100 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="pantene-200ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="pantene-200ml" class="volume__label">200 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="pantene-300ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="pantene-300ml" class="volume__label">300 мл</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex-wrap">
+          <div class="product__cost">
+            <span class="product__price">200 грн</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__order">
+        <div class="product__quantity quantity">
+          <button type="button" class="quantity__button quantity__button--remove"></button>
+          <span class="quantity__num">1</span>
+          <button type="button" class="quantity__button quantity__button--add"></button>
+        </div>
+        <div class="product__buy">
+          <button type="button" class="product__buy-button">
+            <span class="product__buy-text">купить</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product__status">
+        <span>new</span>
+      </div>
+      <div class="product__compare"></div>
+      <img src="./images/card-img_3.jpg" class="product__img" alt="shampoo"
+        onmouseout="this.src='./images/card-img_3.jpg'" onmouseover="this.src='./images/card-img_3-2.jpg'">
+      <h2 class="product__header">Шампунь</h2>
+      <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+      <div class="product__details">
+        <div class="flex-wrap flex-wrap-md">
+          <div class="product__color select__box">
+            <div class="select__list" onmouseout="this.className='select__list'" onmouseover="this.className='select__list select__list--active'">
+              <div class="select__item">
+                <label for="yellow" class="select__label">
+                  <input type="radio" class="select__radio" id="yellow" name="yellow" />
+                  Желтый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="concept-red" class="select__label">
+                  <input type="radio" class="select__radio" id="concept-red" name="concept-red" />
+                  Красный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="concept-green" class="select__label">
+                  <input type="radio" class="select__radio" id="concept-green" name="concept-green" />
+                  Зеленый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="concept-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="concept-blue" name="concept-blue" />
+                  Белый
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="concept-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="concept-blue" name="concept-blue" />
+                  Черный
+                </label>
+              </div>
+
+              <div class="select__item">
+                <label for="concept-blue" class="select__label">
+                  <input type="radio" class="select__radio" id="concept-blue" name="concept-blue" />
+                  Синий
+                </label>
+              </div>
+            </div>
+            <div class="selected-color">
+              Цвет
+            </div>
+          </div>
+
+          <div class="product__volume volume__box">
+            <div class="volume__item volume__item--active">
+              <input type="radio" class="volume__input" id="concept-100ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="concept-100ml" class="volume__label">100 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="concept-200ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="concept-200ml" class="volume__label">200 мл</label>
+            </div>
+
+            <div class="volume__item">
+              <input type="radio" class="volume__input" id="concept-300ml" name="volume">
+              <span class="volume__button"></span>
+              <label for="concept-300ml" class="volume__label">300 мл</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex-wrap">
+          <div class="product__cost">
+            <span class="product__price">200 грн</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__order">
+        <div class="product__quantity quantity">
+          <button type="button" class="quantity__button quantity__button--remove"></button>
+          <span class="quantity__num">1</span>
+          <button type="button" class="quantity__button quantity__button--add"></button>
+        </div>
+        <div class="product__buy">
+          <button type="button" class="product__buy-button">
+            <span class="product__buy-text">купить</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

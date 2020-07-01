@@ -1,0 +1,30 @@
+html,
+body,
+div,
+span,
+h2,
+p,
+img,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+input {
+  padding: 0;
+  border: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+:focus {
+  outline: 0;
+}

@@ -1,0 +1,52 @@
+@import "utils";
+@import "typography";
+@import "fonts";
+@import "product";
+@import "select";
+@import "volume";
+@import "quantity";
+
+html {
+  scroll-behavior: smooth;
+  font-family: "SF";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
+  margin: 30px auto 0;
+  padding: 0 30px;
+
+  @media (max-width: 1199px) {
+    column-gap: 20px;
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 479px) {
+    padding: 0 15px;
+  }
+}
+
+.flex-wrap-md {
+  width: 75%;
+
+  @media (max-width: 479px) {
+    width: 60%;
+  }
+}
