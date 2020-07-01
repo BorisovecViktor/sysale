@@ -1,0 +1,40 @@
+.quantity {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 39px;
+  background: #e2e9f0;
+  border-radius: 30px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out; }
+  .quantity:hover {
+    background: #d8e3ee;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
+  .quantity__button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 35%;
+    height: 100%;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  .quantity__button--remove {
+    left: 0;
+    background-image: url(../images/button-remove.svg); }
+  .quantity__button--add {
+    right: 0;
+    background-image: url(../images/button-add.svg); }
+
+/*# sourceMappingURL=quantity.css.map */
